@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: #f0f4f8;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 36px;
+  text-align: center;
+}
+
+.tip-wrapper {
+  border-radius: 10px;
+  background-color: #34495e;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.bill-amount,
+.discount-amount,
+.tip-amount,
+.customer-number,
+.btn,
+.tip-paid-container,
+.total-amount-container,
+.customer-amount-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+label {
+  color: #ecf0f1;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+/* Range Slider Styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #95a5a6;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #e74c3c;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #e74c3c;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #27ae60;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #2ecc71;
+}
+
+/* Lower Section Container Styling */
+.tip-paid-container,
+.total-amount-container,
+.customer-amount-container {
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  padding: 15px 20px;
+  color: #2c3e50;
+  font-size: 18px;
+  border: 1px solid #bdc3c7;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tip-paid-container p,
+.total-amount-container p,
+.customer-amount-container p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.tip-paid-container .tip-paid,
+.total-amount-container .total-amount,
+.customer-amount-container .customer-amount {
+  font-weight: bold;
+  color: #c0392b;
+  font-size: 20px;
+}

@@ -1,0 +1,175 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh; /* Full viewport height to center the container */
+}
+
+h1 {
+  margin-top: 30px;
+  text-align: center;
+  color: #4a90e2;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh; /* Limit the height */
+  overflow: hidden; /* Prevents items from going outside */
+}
+
+/* Input Section */
+.input-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.input-text {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  color: #333;
+}
+
+.input-text:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #357abd;
+}
+
+/* Error Messages */
+.error-container,
+.same-container {
+  color: #e74c3c;
+  font-size: 14px;
+  display: none;
+  text-align: center;
+}
+
+/* Notes List */
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-height: 60vh; /* Scroll when notes exceed this height */
+  overflow-y: auto; /* Adds vertical scroll */
+  padding-right: 10px;
+  margin-top: 20px;
+}
+
+/* Note Item */
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f7f9fc;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  word-wrap: break-word;
+  max-width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.item:hover {
+  background-color: #e9f5fc;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Note Text */
+.note-text {
+  flex-grow: 1;
+  color: #333;
+  font-size: 1em;
+  margin-right: 10px;
+  word-wrap: break-word; /* Handle long text */
+  max-width: 70%; /* Ensures buttons remain visible */
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  flex-shrink: 0;
+  gap: 10px;
+  align-items: center;
+}
+
+.note-edit-btn,
+.note-delete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.note-edit-btn {
+  background-color: #f39c12;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.note-edit-btn:hover {
+  background-color: #e67e22;
+}
+
+.note-delete-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.note-delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Scrollbar Customization */
+.list-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.list-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 5px;
+}

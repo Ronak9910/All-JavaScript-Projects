@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 600px;
+  min-height: 400px; /* Ensure enough space for buttons and content */
+  position: relative;
+}
+
+h1 {
+  color: #333;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.custom-btn {
+  display: flex;
+  justify-content: space-between; /* Spread buttons evenly across the top */
+  width: 100%;
+  position: absolute;
+  top: -40px; /* Move buttons above the container */
+  left: 0;
+  padding: 0 20px; /* Add some padding to keep buttons within box edges */
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: rgb(75, 95, 222);
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: rgb(52, 73, 180);
+  transform: translateY(-3px);
+}
+
+.btn.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.content-wrapper {
+  margin-top: 50px; /* Space between the buttons and content */
+  width: 100%;
+  padding: 20px;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center-align the content */
+}
+
+.content {
+  font-size: 18px;
+  color: #444;
+  display: none;
+  line-height: 1.5;
+}
+
+.content.active {
+  display: block;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

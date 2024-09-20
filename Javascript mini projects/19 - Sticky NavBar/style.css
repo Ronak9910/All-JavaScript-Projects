@@ -1,0 +1,103 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #004d99; /* Dark blue */
+  color: #fff;
+  font-weight: bold;
+  font-size: 2em;
+  height: 100px;
+  padding-top: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 60px;
+  padding: 0 20px;
+  position: relative; /* Ensures fixed positioning works */
+  transition: background-color 0.3s ease; /* Smooth transition for background change */
+}
+
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.nav-bar a:hover {
+  background-color: #575757;
+}
+
+/* Sticky Navigation Bar */
+.fixed-navBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it stays on top of other content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Content */
+.content {
+  margin-top: 60px; /* Account for fixed nav-bar height */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.section p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+  }
+
+  .nav-bar a {
+    padding: 10px;
+  }
+
+  .content {
+    margin-top: 80px; /* Adjust margin-top for smaller screens */
+  }
+}

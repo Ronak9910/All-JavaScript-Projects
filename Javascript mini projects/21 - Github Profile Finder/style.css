@@ -1,0 +1,98 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container styling */
+.container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input and Button styling */
+.input-details {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.username {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 70%;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Profile details styling */
+.profile-details {
+  margin-top: 20px;
+}
+
+.profile-details img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-details h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-details p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Loader styling */
+.loading {
+  font-size: 18px;
+  color: #007bff;
+  margin-top: 20px;
+}

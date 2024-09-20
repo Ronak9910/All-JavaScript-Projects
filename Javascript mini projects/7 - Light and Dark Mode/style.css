@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+:root {
+  --body-bg: #f0e6f6;
+  --body-font: #333;
+  --btn-bg: #6b5b95;
+  --btn-font: #fff;
+  --btn-hover-bg: #5a4a84;
+}
+
+[data-theme="dark"] {
+  --body-bg: #2e2e2e;
+  --body-font: #f0e6f6;
+  --btn-bg: #4caf50;
+  --btn-font: #ffffff;
+  --btn-hover-bg: #45a049;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-font);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+  transition: background-color 0.5s ease;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn {
+  height: 50px;
+  width: 160px;
+  font-size: 18px;
+  color: var(--btn-font);
+  background-color: var(--btn-bg);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}

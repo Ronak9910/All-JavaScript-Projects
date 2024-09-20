@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4a90e2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #e0e0e0;
+}
+
+/* Projects Container Styling */
+.projects-container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Project Card Styling */
+.project-card {
+  background-color: #fff;
+  border: 2px solid #4a90e2;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+  font-size: 2rem;
+  font-weight: 600; /* Slightly reduced weight for balance */
+  color: #333;
+  text-transform: none; /* Not all uppercase */
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+  font-style: italic; /* Added italic for style */
+}
+
+.project-card h2:hover {
+  color: #ff6b6b;
+}
+
+/* Action Button Styling */
+.project-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.view-project-btn,
+.view-code-btn {
+  padding: 12px 24px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500; /* Reduced weight for a more elegant look */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.view-project-btn:hover,
+.view-code-btn:hover {
+  background-color: #357abd;
+  transform: scale(1.05);
+}
+
+/* One Project per Row */
+.project-card {
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .projects-container {
+    max-width: 90%;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .view-project-btn,
+  .view-code-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .project-card h2 {
+    font-size: 1.6rem;
+  }
+}

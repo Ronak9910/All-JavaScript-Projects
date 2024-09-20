@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header styling */
+.header {
+  background-color: #007bff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.header h1 {
+  font-size: 2.4rem;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+/* Input wrapper styling */
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-wrapper label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.input-wrapper input {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.submit {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+}
+
+/* Pagination wrapper styling */
+.pagination-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 0 1 calc(25% - 20px);
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #495057;
+}
+
+/* Pagination buttons */
+.btns-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.page-btn {
+  display: flex;
+  gap: 5px;
+}
+
+.btn {
+  background-color: #343a40;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #495057;
+}
+
+.color {
+  background-color: #007bff;
+  color: white;
+}
+
+.not-active {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+/* Reset button */
+.reset-btn {
+  margin-top: 20px;
+}
+
+.reset {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset:hover {
+  background-color: #c82333;
+}
+
+.pagination-wrapper {
+  display: none;
+}
